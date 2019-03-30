@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat app</title>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="leftcol">
+            <div class="user">
+                <div class="user-photo"></div>
+                <div class="user-name">Добро пожаловать!</div>
+            </div>
+            <div id="usersList"></div>
+        </div>
+        <div class="rightcol">
+            <div class="action-map">
+                <div class="user-auth">
+                    <h1>Авторизация</h1>
+                    <form id="authForm">
+                        <input id="fullName" type="text" placeholder="Фио">
+                        <input id="nickName" type="text" placeholder="Ник">
+                        <button class="btn">Войти</button>
+                    </form>
+                </div>
+                <textarea id="chatInfo" name="name" rows="8" cols="40"></textarea>
+                <div id="messages"></div>
+            </div>
+            <div>
+                <form class="" id="chatForm">
+                    <div class="chat-inputs">
+                        <input id="messageInput" type="text">
+                        <button class="btn">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</body>
+
+</html>

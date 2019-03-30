@@ -1,0 +1,11 @@
+{
+    "name": "socket-chat-loftschool",
+    "version": "0.0.1",
+    "description": "Socket chat loftschool",
+    "dependencies": {
+        "express": "^4.16.4",
+        "http": "0.0.0",
+        "log4js": "^4.0.2",
+        "socket.io": "^2.2.0"
+    }
+}
